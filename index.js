@@ -10,6 +10,13 @@ import {
 } from "./lib/statements.js";
 import fetchDBStories from "./lib/fetchDBStories.js";
 import handleSimilarityCheck from "./lib/handleSimilarityCheck.js";
+import { fileURLToPath } from "url";
+import path from "path";
+
+const currentFilePath = fileURLToPath(import.meta.url);
+
+// Absolute path to the project root directory
+export const root = path.dirname(currentFilePath);
 
 export const storiesCounter = {
   count: 0,

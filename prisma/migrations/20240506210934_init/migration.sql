@@ -1,7 +1,0 @@
--- CreateTable
-CREATE TABLE "story" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    "story" TEXT NOT NULL,
-    "tokens" TEXT NOT NULL,
-    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
